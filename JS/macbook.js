@@ -1,8 +1,10 @@
+// function of getting default 0 value for three buttons
 function defaultValue(term) {
     const defaultId = document.getElementById(term + '-extra-cost');
     defaultId.innerText = 0;
     totalCost()
 }
+// function of getting  value of charge for three buttons
 function chargedValue(termForCharge) {
     const chargedId = document.getElementById(termForCharge + '-extra-cost');
     if (termForCharge == 'memory') {
@@ -16,6 +18,7 @@ function chargedValue(termForCharge) {
     }
     totalCost()
 }
+//function of calulating total cost
 function totalCost() {
     const totalId = document.getElementById('totalCost');
     const totalPromo = document.getElementById('totalCostWithPromoCode');
@@ -23,6 +26,7 @@ function totalCost() {
     totalId.innerText = total;
     totalPromo.innerText = total;
 }
+// adding events to the buttons
 document.getElementById('memory-default-button').addEventListener('click', function () {
     defaultValue('memory');
 })
@@ -46,6 +50,7 @@ document.getElementById('storage-another-charge-button').addEventListener('click
     anotherChargedId.innerText = 180;
     totalCost();
 })
+//adding events for  apply button of promo code
 document.getElementById("promoButton").addEventListener('click', function () {
     const promoCodeID = document.getElementById('promoInput');
     const promocode = promoCodeID.value;

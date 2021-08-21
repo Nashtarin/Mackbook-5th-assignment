@@ -4,4 +4,11 @@
     color:darkmagenta;
     
 }
-/* pricelist style */
+/* button hover style */
+button:hover{
+    background-color:rgb(128, 18, 161);
+    color:whitesmoke;
+    font-weight:500;
+
+    
+}
