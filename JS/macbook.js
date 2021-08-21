@@ -50,7 +50,7 @@ document.getElementById('storage-another-charge-button').addEventListener('click
     anotherChargedId.innerText = 180;
     totalCost();
 })
-//adding events for  apply button of promo code
+//adding events for applying button of promo code
 document.getElementById("promoButton").addEventListener('click', function () {
     const promoCodeID = document.getElementById('promoInput');
     const promocode = promoCodeID.value;
